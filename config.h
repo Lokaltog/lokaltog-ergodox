@@ -28,9 +28,9 @@ Project located at <https://github.com/benblazak/ergodox-firmware>
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x1307
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    TMK/Cub
-#define PRODUCT         Ergodox
+#define DEVICE_VER      0x0002
+#define MANUFACTURER    t.m.k.
+#define PRODUCT         Ergodox mod
 #define DESCRIPTION     t.m.k. keyboard firmware for Ergodox
 
 #define MATRIX_ROWS 14
@@ -70,17 +70,6 @@ Project located at <https://github.com/benblazak/ergodox-firmware>
 )
 
 #define ONESHOT_TIMEOUT 500
-
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
-
-/* disable debug print */
-//#define NO_DEBUG
-
-/* disable print */
-//#define NO_PRINT
 
 /* disable action features */
 //#define NO_ACTION_LAYER
