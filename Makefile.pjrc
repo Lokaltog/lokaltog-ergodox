@@ -54,11 +54,11 @@ SRC =	keymap_common.c \
 	ergodox.c \
 	twimaster.c
 
-ifdef KEYMAP
-    SRC := keymap_$(KEYMAP).c $(SRC)
-else
-    SRC := keymap_blazak.c $(SRC)
+ifndef KEYMAP
+    KEYMAP = lokaltog
 endif
+SRC := keymap_$(KEYMAP).c $(SRC)
+OPT_DEFS += -DKEYMAP_$(KEYMAP)
 
 CONFIG_H = config.h
 
